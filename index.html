@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Web Team Lead Vision - New Vision Academy</title>
+
+    <script>
+        // Custom Tailwind config to match the logo colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vision-gold': '#C09A3E', // Gold/brown from the logo
+                        'vision-dark': '#1a1a1a', // Dark black
+                        'vision-gray': '#2D2D2D', // Dark gray from the logo
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #C09A3E;
+            /* 'vision-gold' */
+        }
+    </style>
+</head>
+
+<body class="bg-vision-dark text-gray-200 antialiased">
+
+    <!-- 1. Navbar -->
+    <nav class="bg-vision-dark sticky top-0 z-50 shadow-lg shadow-vision-gray/20">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <img src="pics/unnamed.webp" alt="New Vision Academy Logo" class="h-12"
+                    onerror="this.onerror=null; this.src='https://placehold.co/150x50/1a1a1a/C09A3E?text=New+Vision';">
+            </div>
+            <!-- Navigation Links -->
+            <div class="space-x-6 text-lg">
+                <a href="#about" class="text-gray-300 hover:text-vision-gold transition-colors duration-300">About
+                    Me</a>
+                <a href="#plan" class="text-gray-300 hover:text-vision-gold transition-colors duration-300">The Plan</a>
+                <a href="#results"
+                    class="text-gray-300 hover:text-vision-gold transition-colors duration-300">Outcomes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. About Me Section -->
+    <section id="about"
+        class="min-h-screen flex flex-col items-center justify-center bg-vision-dark py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+                <!-- Personal Photo --><img src="pics/selim.jpg"
+                    alt="[Your Name]" class="w-48 h-48 rounded-full border-4 border-vision-gold shadow-xl">
+
+                <!-- Academy Logo --><img src="pics/unnamed.webp" alt="New Vision Academy Logo" class="h-48 md:h-48"
+                    onerror="this.onerror=null; this.src='https://placehold.co/200x200/1a1a1a/C09A3E?text=New+Vision+Logo';">
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello New Vision, I'm Selim</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-400 mb-6">Candidate for Web Development Team Lead
+            </h2>
+
+            <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+                A mechatronic engineer with experience in web development, specializing in building and
+                mentoring high-performance teams.
+                I am passionate about translating ideas into seamless digital experiences and aim to apply my expertise
+                to drive technological growth at New Vision Academy.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. The Plan Section -->
+    <section id="plan" class="py-24 bg-vision-gray px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">My 90-Day Plan: Building Our Digital Future</h2>
+                <p class="text-xl text-gray-400">An integrated 90-day strategy focused on Team, Technology, and
+                    Identity.</p>
+            </div>
+
+            <!-- Plan Stages (3 stages) -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Stage 1: Days 1-30 -->
+                <div
+                    class="bg-vision-dark p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 text-vision-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold ml-4">Days 1-30: Foundation & Assessment</h3>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-gray-300 text-lg">
+                        <li>Deep dive into New Vision's culture, goals, and business objectives.</li>
+                        <li>Full audit of the current tech stack, infrastructure, and workflows.</li>
+                        <li>1-on-1 meetings with all team members to understand skills and aspirations.</li>
+                        <li>Define the core architecture & digital identity for the new website.</li>
+                        <li>Identify quick wins for immediate site performance improvements.</li>
+                    </ul>
+                </div>
+
+                <!-- Stage 2: Days 31-60 -->
+                <div
+                    class="bg-vision-dark p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 text-vision-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold ml-4">Days 31-60: Execution & Team Building</h3>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-gray-300 text-lg">
+                        <li>Implement Agile methodologies and establish best practices (code reviews, testing).</li>
+                        <li>Launch 'Continuous Learning' program (workshops, paired programming).</li>
+                        <li>Standardize the modern development stack (e.g., React/Next.js, CMS, CI/CD).</li>
+                        <li>Begin development of the new 'Portfolio & Events' website modules.</li>
+                    </ul>
+                </div>
+
+                <!-- Stage 3: Days 61-90 -->
+                <div
+                    class="bg-vision-dark p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 text-vision-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold ml-4">Days 61-90: Innovation & Launch</h3>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-gray-300 text-lg">
+                        <li>Develop and launch the integrated 'Online Application Portal'.</li>
+                        <li>Establish a clear 6-month tech roadmap focused on scalability and innovation.</li>
+                        <li>Automate deployment pipelines (CI/CD) to ensure rapid, reliable releases.</li>
+                        <li>Measure and report on key performance indicators (KPIs) for team and site.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Expected Outcomes Section -->
+    <section id="results" class="py-24 bg-vision-dark px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Expected Outcomes</h2>
+                <p class="text-xl text-gray-400">By implementing this plan, we will achieve tangible, impactful results:
+                </p>
+            </div>
+
+            <div class="space-y-8">
+
+                <!-- Outcome 1 -->
+                <div class="flex items-start space-x-4">
+                    <div>
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-vision-gold mb-1">A High-Velocity, Future-Ready Team</h3>
+                        <p class="text-lg text-gray-300">A motivated team with modern skills, clear processes, and a
+                            culture of continuous learning, reducing delivery time by [70%].</p>
+                    </div>
+                </div>
+
+                <!-- Outcome 2 -->
+                <div class="flex items-start space-x-4">
+                    <div>
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-vision-gold mb-1">A Powerful Digital Identity</h3>
+                        <p class="text-lg text-gray-300">A comprehensive, fast, and modern website that serves as the
+                            central hub for showcasing our portfolio, managing events, and defining the New Vision
+                            brand.</p>
+                    </div>
+                </div>
+
+                <!-- Outcome 3 -->
+                <div class="flex items-start space-x-4">
+                    <div>
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-vision-gold mb-1">Streamlined Student Onboarding</h3>
+                        <p class="text-lg text-gray-300">A fully functional online application portal, improving the
+                            applicant experience and reducing administrative overhead.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="py-16 bg-vision-gray text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Ready to build this vision together.</h2>
+            <p class="text-xl text-gray-400 mb-8">I look forward to discussing how my experience can contribute to the
+                success of New Vision Academy.</p>
+            <p class="text-gray-500">© 2025 - Presented by [Your Name] for New Vision Academy.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
